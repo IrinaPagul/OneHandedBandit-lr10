@@ -31,6 +31,7 @@ let img1Data = { key: 0 };
 let img2Data = { key: 0 };
 let img3Data = { key: 0 };
 let round = 0;
+let name = '';
 function Start() {
     if (name != ''){
         if (round == 3){
