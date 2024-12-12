@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('carl-raw-7H7KVCihBvI-unsplash.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin: 0; 
+    height: 100vh; 
+}
+.box {
+    position: absolute;
+    display: flex; 
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+}
+#generate{
+    position: absolute;
+    background-color: rgba(217, 192, 115, 0.8);
+    height:4.8vh;
+    width:30%;
+    top:80%;
+    left:35%;
+    font-size:100%;
+    border-radius: 5px;
+}
+#userName{
+    position: absolute;
+    left:35%;
+    top:2%;
+    height: 5vh;
+    width: 29%;
+    font-size: 2em;
+    border-radius: 5px;
+    background-color: rgba(130, 42, 42, 0.2);
+    text-align: center;
+    color: white;
+}
+
+#icons {
+    position: absolute;
+    width: 60%; 
+    height: auto;
+    top: 30%; 
+    left: 20%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px; 
+    flex-direction: row; 
+}
+
+#icon1, #icon2, #icon3 {
+    flex: 0 1 auto; 
+    max-width: 30%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon1 img, #icon2 img, #icon3 img {
+    width: 100%; 
+    height: auto; 
+}
+
+#roundText, #coins{
+    color:white;
+    top:15%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#coins{
+    top:5%;
+    left:80%;  
+}
+
+@media (max-width: 1100px) {
+    #icons { top: 35%;}
+    #generate{
+        top:60%;
+        font-size:120%;
+    }
+    #userName{top:10%;}
+    #roundText{ top:23%;}
+}
+
+@media (max-width: 768px) {
+     #icons {
+        width: 100%; 
+        height: auto;
+        flex-wrap: nowrap; 
+        left:0%;
+        top: 40%;
+        justify-content: center; 
+    }
+
+    #icon1, #icon2, #icon3 {max-width: 20%; }
+    #generate{top:70%;}
+}
