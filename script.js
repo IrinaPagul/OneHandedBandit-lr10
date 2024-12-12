@@ -39,6 +39,7 @@ function Start() {
             genButton.disabled = true;
             if (coins != 0){alert(`YOU WIN ${coins} COINS!`);}
             else if (coins == 0){alert("YOU LOST!");}
+            name = '';
         }
         else{
             Generate(img1, img1Data);
