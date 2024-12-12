@@ -46,7 +46,6 @@ function Start() {
             round ++;
             roundText.innerHTML = `${round}/ 3`;
             if (img1Data.key === img2Data.key && img2Data.key === img3Data.key){
-                alert(1111);
                 coins +=10;
                 coinsText.innerHTML = `${coins} coins`;
             }
